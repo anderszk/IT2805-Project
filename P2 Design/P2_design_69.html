@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>P2 - Design - Gruppe 69</title>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body class="parallax">
+    <div class="wrapper">
+        <header>
+            <h1>
+                P2: Project Design
+            </h1>
+            <h2>Anders Kristensen og Thomas Engum</h2>
+            <p>12 - 09 - 2022</p>
+        </header>
+        <div class="content">
+            <section class="first">
+                <h2>Customer details</h2>
+                <div id="part1">
+                    <div class="left">
+                        <p>Customer:</p>
+                     </div>
+                     <div class="right">
+                         <p style="text-decoration: underline;">Clarity AS</p>
+                     </div>
+                </div>
+            </section>
+
+            <section class="second">
+                <div id="part2">
+                    <p>
+                        The purpose of this website is to promote the Inital Coin Offering / Release of Clarity's
+                        new crypto valuta. It is a way for interested people to read about Clarity and the event itself,
+                        buy tickets for the event, and to contact the organizers. 
+                    </p>
+                    <p>
+                        The goal for the website is to inform potential investors about the new release, enable ticket 
+                        purchasing and for people to be able to contact Clarity via a contact form
+                    </p>
+                    <p>
+                        The audience is crypto bros, potential investors and in general people who are interested in crypto and
+                        finance.
+                    </p>
+                </div>
+            </section>
+
+            <section class="third">
+                <div id="part3">
+                    <h2>Navigation Structure</h2>
+                    <p>
+                        The navigational aspect for the website is based on a Homepage with access to all the 
+                        subpages using a navigation bar at top and a menu in the websites footer. The navigation bar
+                        will be sticky when scrolling down the page, and will therefore be available for the user at
+                        any given point of the vertical scroll-position of the website. 
+                    </p>
+                    <p>
+                        The menu will refer the users to the respective subpage with the href-attribute. This will
+                        open the subpage in the same window. External link or URLs will take the user to a new window
+                        for user-experience motivations. This will allow the user to visit external websites without
+                        having to navigate to the same page in out website when done reading at the external website.
+                    </p>
+                    <p>
+                        We believe this is the best way to structure our navigation because of the amount of subpages.
+                        Having the navigation at the top of the screen and in the footer prevents the navbar in
+                        distracting the user from the content of the page, while being available at any given time.
+                    </p>
+                    <p style="font-weight: bold; text-align: center;">
+                        This is the sitemap for our site:
+                    </p>
+                    <img src="img/sitemap.png" alt="sitemap for the website" height="270" width="400">
+                    <p style="font-weight: bold; text-align: center;">
+                        This is the relation between the menu elements and the pages:
+                    </p>
+                    <img src="img/tilstand.png" alt="state diagram" height="500" width="800">
+                </div>
+            </section>
+
+            <section class="outlay-section">
+                <div id="part4">
+                    <h2>The Design Manual</h2>
+                    <p>
+                        Our color palette is based on the color of the logo, and uses a Chestnut Red as a secondary color,
+                        while the primary color is Chinese Black. We use a Yellow Orange color as an accent to give some variation
+                        in the color tones shown in the website. This makes a common color-combination of black, yellow and red,
+                        which is recogniseable from for instance the German flag. The reasoning behind the color palette is to give a
+                        modern look, with great contrast in regards to universal design. It also provides room for sudden accents that
+                        will give a neutral, but pleasing color-scheme to the website.
+                    </p>
+                    <p style="font-weight: bold; text-align: center;">
+                        This is the Color Palette of the website:
+                    </p>
+                    <img src="img/colorpalette.png" alt="Color palette" height="32%" width="48%">
+                    <p>
+                        We are planning on using the Montserrat font for the website, as it is a modern sans-serif-font
+                        that is often used by new websites. It is minimalistic, and has a good readability while also being
+                        good-looking and easy for the eye.
+                    </p>
+                    <p style="font-weight: bold; text-align: center;">
+                        This is the Typography of the website:
+                    </p>
+                    <img src="img/typography.png" alt="Montserrat Typography" height="32%" width="48%">
+                    <p>
+                        As fot the Logo and the elements they are primary red, an the CTA-design has a yellow onhover-effect
+                        that will give a clear and nice contrast and feedback for the user. By having the CTA-buttons with border-radius,
+                        we believe that it will make it clear that it is indeed a CTA, and that will be useful in regards to usability and
+                        visibility aspects of the website.
+                    </p>
+                    <p style="font-weight: bold; text-align: center;">
+                        This is the Logo and the CTA-design:
+                    </p>
+                    <img src="img/cta.png" alt="Call to action design" height="32%" width="48%">
+                    <img src="img/logo.png" alt="Company Logo" height="32%" width="48%">
+                </div>
+            </section>
+            <section>
+                <div id="part5">
+                    <h2>The Wireframes</h2>
+                    <p>
+                        The wireframe was designed to give a general outlay of the website in form of a sketch with
+                        no specific content, but modular blocks that represent elements in the website. It is meant
+                        to be a visual guide for the website and to manage space when implementing the content. 
+                    </p>
+                    <div class="row">
+                        <div class="column">
+                            <img src="img/wf_home.png" alt="Screenshot of homepage">
+                        </div>
+                        <div class="column">
+                            <img src="img/wf-about.png" alt="Screenshot of about us page">
+                        </div>
+                        <div class="column">
+                            <img src="img/wf-tickets.png" alt="Screenshot of ticket shop">
+                            <img src="img/wf-contact.png" alt="Screenshot of contact page">
+                        </div>
+                    </div>
+                    <div class="button-holder">
+                        <a class="btn" href="https://www.figma.com/file/ILeZCzaEXYOKuTeZD0lKeB/Wireframes?node-id=0%3A1" target="_blank">See in Figma</a>
+                    </div>
+                   
+                </div>
+            </section>
+            <section>
+                <div id="part6">
+                    <h2>The Website Outlay</h2>
+                    <p>
+                        As mention earlier, the site consists of 4 pages in total, including a Homepage, About us,
+                        Contact and Ticket Shop with a ticket form. Below is a few screenshots of the design itself, following the design
+                        manual mentioden in the last chapter. 
+                    </p>
+                    <p>
+                        The design was made in Figma, where we have also made a functional prototype. By pressing the button
+                        below the image gallery, you will be sent to the Figma-site, where you can run a close-to full-scale
+                        prototype of the website.  
+                    </p>
+                    <div class="row">
+                        <div class="column">
+                            <img src="img/Home.png" alt="Screenshot of homepage">
+                        </div>
+                        <div class="column">
+                            <img src="img/About.png" alt="Screenshot of about us page">
+                        </div>
+                        <div class="column">
+                            <img src="img/Contact.png" alt="Screenshot of ticket shop">
+                            <img src="img/Tickets.png" alt="Screenshot of contact page">
+                            <img src="img/Frame 1.png" alt="contact form" id="contact-form">
+                        </div>
+                    </div>
+                    <div class="button-holder">
+                        <a class="btn" href="https://www.figma.com/file/HQY7PYhjpcPkQaAoYOaod6/Design-%2F-High-fidelity-Prototype?node-id=0%3A1" target="_blank">Try Prototype Here</a>
+                    </div>
+                   
+                </div>
+            </section>
+            <section>
+                <div id="part7">
+                    <h2>The Content</h2>
+                    <div class="content-div" style="margin-top: 0;">
+                        <h3>Home</h3>
+                        <p>
+                            The purpose of this website is to promote the Inital Coin Offering / Release of Clarity's
+                            new crypto valuta. It is a way for interested people to read about Clarity and the event itself,
+                            buy tickets for the event, and to contact the organizers. 
+                        </p>
+                    </div>
+                    <div class="content-div">
+                        <h3>About us</h3>
+                        <p>
+                            The purpose of this website is to promote the Inital Coin Offering / Release of Clarity's
+                            new crypto valuta. It is a way for interested people to read about Clarity and the event itself,
+                            buy tickets for the event, and to contact the organizers. 
+                        </p>
+                    </div>
+                    <div class="content-div">
+                        <h3>Ticket Shop</h3>
+                        <p>
+                            The purpose of this website is to promote the Inital Coin Offering / Release of Clarity's
+                            new crypto valuta. It is a way for interested people to read about Clarity and the event itself,
+                            buy tickets for the event, and to contact the organizers. 
+                        </p>
+                    </div>
+                    <div class="content-div">
+                        <h3>Contact Page</h3>
+                        <p>
+                            The purpose of this website is to promote the Inital Coin Offering / Release of Clarity's
+                            new crypto valuta. It is a way for interested people to read about Clarity and the event itself,
+                            buy tickets for the event, and to contact the organizers. 
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="part8">
+                    <h2>Minimum Requirements</h2>
+                    <div class="content-div" style="margin-top: 0;">
+                        <h3>On-scroll Animations</h3>
+                        <p>
+                            The on-scroll animation will gradually show the content to the users when they scroll
+                            through the website. This will be done using JavaScript, by adding an eventlistner and
+                            change CSS-classes to determine the styling of the element using JS.
+                        </p>
+                    </div>
+                    <div class="content-div">
+                        <h3>Form-validation and submission</h3>
+                        <p>
+                            The form-validation and submission functions will enable validation of the input data
+                            from the user. This will enable us to secure that the data is in the right format when
+                            sending it to the backend-server. The submission-function will be coded, but not implemented,
+                            as the project is frontend only, and there wont be a backend server implemented.
+                        </p>
+                    </div>
+                    <div class="content-div">
+                        <h3>Countdown-timer and ticket-counter</h3>
+                        <p>
+                            The countdown timer will show the remaining time before the event starts, and we will set the
+                            counter to count towards the project deadline. This will be done by using dynamic data fields that
+                            are sent by JavaScript functions by getting the current time and displaying that on the website.
+                            <br><br>
+                            The ticket-counter will count the remaining tickets for each category. This will be reset each time
+                            the user enters the page, as there are no safe way to store the data over time. This will be done by
+                            using JavaScript-functions that will track the amount of times "Buy tickets" are clicked for each
+                            category, and then update the variable.
+                        </p>
+                    </div>
+                    <div class="content-div">
+                        <h3>Dynamic content / Ticket-carousel</h3>
+                        <p>
+                            The tickets will be shown for a given time period before changing to the next type. This will be
+                            triggered on load, and if someone press one of the ticket-types in the "ticket menu" then it will be
+                            turned off. This is due to usability, as you dont want it to change if for instance youre reading the
+                            ticket-information. This will be done using Javascript by combining a timer-function with change of
+                            the display attribute of each ticket type. More advanced animations may be implemented if we have time.
+                        </p>
+                    </div>
+                    <div class="content-div">
+                        <h3>Extra: Google Maps API</h3>
+                        <p>
+                            Will show the user the location of the company, it this case this will be Gløshaugen. This will be done
+                            using javascript and the Google Maps API, that will be implemented in the contact page with a HTML-snippet
+                            provided by Google, and by mark the map using Javascript-functions.
+                        </p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="part9">
+                    <h2>The Game Plan</h2>
+                    <p>
+                        The code will be handled with GitHub, that provides easier communication and version controlling.
+                        For the website, we will start by making the Header and the Footer as theyre used in every page,
+                        then we will make the skeleton code for the website, by splitting them into rows and columns according
+                        to the design mentioned earlier. Then we will implement the design in code. 
+                    </p>
+                    <p>
+                        We have decided to split the workload into 2 pages each, as it is 4 pages in total. We will try to mak
+                        the common elements first, and then use seperate css-sheets for each for the pages, and then combining them.
+                        This requires good communication, but we are striving to work in-person together, as this is the best way.
+                    </p>
+                    <p>
+                        The paragraphs below shows the sdeadlines and important milestones in the project.
+                    </p>
+                    <div class="anders">
+                        <h3>Anders</h3>
+
+                    </div>
+                    <div class="thomas">
+                        <h3>Thomas</h3>
+                        
+                    </div>
+                </div>
+            </section>
+            <section>
+                <div id="part10">
+                    <h2>File Structure</h2>
+                    <div class="file-structure">
+                        <ul class="file-ul">
+                            <li>index.html (Homepage)</li>
+                            <li>about.html</li>
+                            <li>tickets.html</li>
+                            <li>contact.html</li>
+                            <li>css/
+                                <ul>
+                                    <li>style.css</li>
+                                </ul>
+                            </li>
+                            <li>img/
+                                <ul>
+                                    <li>logo.png</li>
+                                    <li>logo_aboutus.png</li>
+                                    <li>header.png</li>
+                                    <li>home_subsec1.png</li>
+                                    <li>home_subsec2.png</li>
+                                    <li>about_us_section.png</li>
+                                </ul>
+                            </li>
+                            <li>js/
+                                <ul>
+                                    <li>script.js</li>
+                                    <li>ticket_carousel.js</li>
+                                    <li>maps.js</li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div style="height: 100px;">
+
+        </div>
+
+    </div>
+	<script src="index.js"></script>
+  </body>
+</html>
