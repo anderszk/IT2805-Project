@@ -5,10 +5,19 @@
     font-family: 'Montserrat' !important;
  }
  
- .content p{
+ .homepage-content p{
      margin: 5% 0;
-     font-size: 18px;
+     font-size: 16px;
+     line-height: 130%;
  }
+
+ .no-scroll-page{
+  width: 80%;
+  height: 70vh;
+  margin: auto;
+  margin-top:220px;
+  margin-top:220px;
+}
 
  body{
     margin: 0;
@@ -19,19 +28,9 @@
   background-color: #161616;
  }
 
- 
- /*--------------------------------------------- Google Maps API --------------------------------------------- */
-
-
- #map {
-    height: 400px;
-    /* The height is 400 pixels */
-    width: 40%;
-    /* The width is the width of the web page */
-  }
-
 
 /*--------------------------------------------- Header / Footer --------------------------------------------- */
+
 
 .navbar {
   text-align: center;
@@ -42,6 +41,7 @@
   border-color: #BD4848;
   color: #BD4848;
   font-size: 1.2em;
+  z-index: 99999;
 }
 
 .navbar ul li{
@@ -100,7 +100,7 @@
   font-weight: 500;
   font-size: 14px;
   border-radius: 200px;
-  transition: all 1s ease-out;
+  transition: all .3s ease-out;
   text-decoration: none;
 }
 
@@ -114,18 +114,18 @@
   font-weight: 500;
   font-size: 14px;
   border-radius: 200px;
-  transition: all 1s ease-out;
+  transition: all .3s ease-out;
   text-decoration: none;
 }
 
 .btn:hover{
     background: #FFB240;
-    transition: all 1s ease-out;
+    transition: all .3s ease-out;
 }
 
 .btn-nav:hover{
   background: #FFB240;
-  transition: all 1s ease-out;
+  transition: all .3s ease-out;
 }
 
 .navbar .btn-holder{
@@ -283,5 +283,96 @@ footer{
   font-size: 3em;
   font-weight: bold;
   color:#BD4848;
+}
+
+
+/*--------------------------------------------- Contact Page --------------------------------------------- */
+
+.contact-form{
+  margin:auto;
+  width: 80%;
+  height: 80%;
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.map-side{
+  margin-top: 4%;
+  width: 60%;
+  height: 90%;
+  float: left;
+}
+
+.form-side{
+  width: 40%;
+  float: right;
+}
+
+.form-side h1{
+  font-size: 2.5em;
+  text-align: center;
+  color: #BD4848;
+  margin-block-start: 0.67em;
+  margin-block-end: 0.2em;
+}
+
+
+#contact-form{
+  width: 80%;
+  margin: auto;
+}
+
+#contact-form input{
+  margin: 2.5% 0;
+  border: 0;
+  height: 35px;
+  border-radius: 10px;
+  width: 100%;
+  font-family: 'Montserrat' !important;
+  padding: 5px;
+}
+
+#contact-form textarea{
+  height: 115px;
+  width: 102%;
+  border-radius: 10px;
+  margin-top: 2.5%;
+  font-family: 'Montserrat' !important;
+}
+
+.form-side .btn-holder{
+  margin-right: 10%;
+  margin-top:3%;
+}
+
+.btn-contact-form{
+  background: #FFB240;
+  float: right;
+  padding: 2.5% 28%;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 200px;
+  transition: all .3s ease-out;
+  text-decoration: none;
+}
+
+.btn-contact-form:hover{
+    background: #FFFFFF;
+    color: #FFB240;
+    transition: all .3s ease-out;
+    border: 2px solid #FFB240;
+}
+
+#contact-form ::placeholder { 
+  opacity: 0.8;
+  vertical-align: text-top;
+  padding: 5px;
 }
 

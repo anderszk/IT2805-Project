@@ -5,32 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Clarity - Contact Us</title>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700' rel='stylesheet'>
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/x-icon" href="img/clarity.ico">
   </head>
   <body>
     <div class="wrapper">
-        <header>
-        </header>
+      <div class="navbar sticky" id="navbar">
+          <a href="index.html"><img src="img/clarity.ico" alt="HomePage" id="navbar-icon"></a>
+          <ul>
+          <li><a class="inactive" href="index.html">Home</a></li>
+          <li><a class="inactive" href="about.html">About Us</a></li>
+          <li><a class="active " href="#">Contact</a></li>
+          </ul>
+          <div class="btn-holder">
+              <a class="btn-nav" href="tickets.html" target="_blank">Buy Tickets now</a>
+          </div>
+      </div>
 
 
-        <div class="content">
-            <h3>My Google Maps Demo</h3>
-            <!--The div element for the map -->
-            <div id="map"></div>
+        <div class="no-scroll-page">
+          <div class="contact-form">
+            <div class="map-side">
+              <!--The div element for the map -->
+              <div id="map"></div>
+            </div>
+            <div class="form-side">
+              <h1>Contact Us!</h1>
+              <form id="contact-form">
+                <input type="text" id="fname" name="fname" placeholder="Name.."><br>
+                <input type="text" id="phone" name="phone" placeholder="Phone..">
+                <input type="text" id="mail" name="mail" placeholder="Email.."><br>
+                <textarea name="request" cols="40" rows="5" placeholder="What's on your mind?.."></textarea>
+              </form>
+              <div class="btn-holder">
+                <a class="btn-contact-form" href="">Send Message</a>
+              </div>
+            </div>
+          </div>
         </div>
 
 
         <footer>
-
+          <p>
+            F00tor
+        </p>
         </footer>
 
     </div>
     <script
     async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_6x_KsOWokLAtMSbhJx7W0yNwy3MtEA&callback=initMap"
   ></script>
-	<script src="js/script.js"></script>
-    <script src="js/maps.js"></script>
+  <script src="js/maps.js"></script>
   </body>
 </html>
