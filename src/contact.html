@@ -36,10 +36,13 @@
                 <input type="text" id="fname" name="fname" placeholder="Name.."><br>
                 <input type="text" id="phone" name="phone" placeholder="Phone..">
                 <input type="text" id="mail" name="mail" placeholder="Email.."><br>
-                <textarea name="request" cols="40" rows="5" placeholder="What's on your mind?.."></textarea>
+                <textarea name="request" cols="40" rows="5" id="msg" placeholder="What's on your mind?.."></textarea>
               </form>
-              <div class="btn-holder">
-                <a class="btn-contact-form" href="">Send Message</a>
+              <div class="btn-holder" id="send-msg">
+                <a class="btn-contact-form" onclick="message_sent()">Send Message</a>
+              </div>
+              <div class="btn-holder" id="send-msg-confirmed">
+                <h2>Message sent! ✓</h2>
               </div>
             </div>
           </div>
@@ -56,6 +59,7 @@
     <script
     async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_6x_KsOWokLAtMSbhJx7W0yNwy3MtEA&callback=initMap"
   ></script>
+  <script src="js/script.js"></script>
   <script src="js/maps.js"></script>
   </body>
 </html>

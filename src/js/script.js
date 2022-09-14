@@ -40,3 +40,26 @@ function phone_validator(phone) {
 function mail_validator(mail) {
     //right .com and have @
 }
+
+async function message_sent(){
+    console.log("hello");
+    let button = document.getElementById("send-msg");
+    let confirmation = document.getElementById("send-msg-confirmed");
+
+    document.getElementById("contact-form").reset();
+    document.getElementById("msg").value = "";
+
+    button.style.display = "none";
+    confirmation.style.display = "block";
+    await new Promise(r => setTimeout(r, 2000));
+    confirmation.style.animation= "slide-out 1s, fade-out 1s";
+    await new Promise(r => setTimeout(r, 700));
+    button.style.display = "block";
+    button.style.animation= "fade-in 1s";
+    confirmation.style.display = "None";
+
+}
+
+function sleep(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
