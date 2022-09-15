@@ -11,3 +11,7 @@
 p{
   margin: 0px;
 }
+
+body {
+  background-image: url("bg.jpg");
+}
