@@ -1,0 +1,13 @@
+.content{
+  margin-left:20%;
+  margin-right:20%;
+  margin-top:5%;
+  margin-bottom:5%;
+  border-radius: 5%;
+  background-color: pink;
+  padding: 1.5%;
+}
+
+p{
+  margin: 0px;
+}
