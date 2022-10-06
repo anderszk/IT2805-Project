@@ -167,10 +167,6 @@ footer{
   margin: 0 10%;
   float: left;
   height: 100%;
-<<<<<<< HEAD
-
-=======
->>>>>>> 969b7a11232e65bf42329fa8a51a3a20d9a8a369
 }
 
 .left-header h1{
@@ -508,14 +504,12 @@ footer{
     opacity: 1;
   }
 }
-<<<<<<< HEAD
-=======
 
 
 /*--------------------------------------------- Media Queries --------------------------------------------- */
 
-@media only screen 
-  and (min-device-width: 834px) 
+@media only screen
+  and (min-device-width: 834px)
   and (max-device-width: 1112px)
   and (-webkit-min-device-pixel-ratio: 2) {
 
@@ -533,4 +527,3 @@ footer{
     }
 
 }
->>>>>>> 969b7a11232e65bf42329fa8a51a3a20d9a8a369
