@@ -486,6 +486,15 @@ footer{
   }
 }
 
+@keyframes slide-in-up {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+
 @keyframes slide-out {
   from {
     transform: translateX(0%);
@@ -520,6 +529,10 @@ footer{
 
 .slide-in-left{
   animation: slide-in-left 1s;
+}
+
+.slide-in-up{
+  animation: slide-in-up 1s;
 }
 
 /*--------------------------------------------- Media Queries --------------------------------------------- */
