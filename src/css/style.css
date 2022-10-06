@@ -4,7 +4,7 @@
     color: #FFFFFF!important;
     font-family: 'Montserrat' !important;
  }
- 
+
 p{
      margin: 5% 0;
      font-size: 1.2vw;
@@ -167,7 +167,7 @@ footer{
   margin: 0 10%;
   float: left;
   height: 100%;
-  
+
 }
 
 .left-header h1{
@@ -287,6 +287,83 @@ footer{
 }
 
 
+/*--------------------------------------------- About Page --------------------------------------------- */
+.about-split-sec1{
+  height: 90vh;
+  width: 100%;
+  margin: 0 0;
+  margin-top: 80px;
+}
+
+.about-split-sec{
+  height: 90vh;
+  width: 100%;
+  margin: 0 0;
+}
+
+.about-split-left1{
+  text-align: center;
+  height: 100%;
+  float: left;
+  width: 50%;
+}
+
+.logolinecontainer{
+  margin-left: 0%;
+  height: 50%;
+  margin-top: 20%;
+  margin-bottom: auto;
+}
+
+.aboutLogoIMG{
+  float: left;
+  height: 25vh;
+  margin-top: 15%;
+  margin-right: 20%;
+  float: right;
+}
+
+.vertiacalline{
+  background-color: yellow;
+  background-color: #FFB240;
+  float: right;
+  width: 2%;
+  height: 45vh;
+  margin-right: 5%;
+  margin-top: 7%;
+}
+
+.about-split-right1{
+  text-align: center;
+  height: 100%;
+  float: right;
+  width: 50%;
+}
+
+.sloganDiv{
+  margin-top: 30%;
+}
+
+.about-split-right1 h1{
+  font-size: 3.5vw;
+  font-weight: bold;
+  color:#BD4848;
+}
+
+.aboutusIMG{
+  height: 50%;
+  float: right;
+}
+
+.redBoxDiv{
+  float: left;
+  height: 40%;
+  margin-top: 10%;
+  position: absolute;
+  background-color: #792724;
+  width: 30%;
+}
+
 /*--------------------------------------------- Contact Page --------------------------------------------- */
 
 .contact-form{
@@ -372,7 +449,7 @@ footer{
     box-shadow:inset 0px 0px 0px 2px;
 }
 
-#contact-form ::placeholder { 
+#contact-form ::placeholder {
   opacity: 0.8;
   vertical-align: text-top;
   padding: 5px;
