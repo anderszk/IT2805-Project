@@ -46,7 +46,7 @@ p{
 
 .navbar ul li{
   display: inline-block;
-  margin-top: 2.5%;
+  margin-top: 3.5vh;
   padding: 0.6% 7% 0 7%;
   font-weight: 600;
 }
@@ -107,12 +107,12 @@ p{
 .btn-nav{
   background: #BD4848;
   float: right;
-  padding: .65% 2%;
+  padding: 15px 25px;
   text-align: center;
   color: white;
   line-height: 25px;
   font-weight: 500;
-  font-size: 14px;
+  font-size: 0.8em;
   border-radius: 200px;
   transition: all .3s ease-out;
   text-decoration: none;
@@ -129,7 +129,7 @@ p{
 }
 
 .navbar .btn-holder{
-  margin: -3.7% 8% 0 0;
+  margin: -65px 8vw 0 0;
 }
 
 #navbar-icon{
@@ -167,17 +167,21 @@ footer{
   margin: 0 10%;
   float: left;
   height: 100%;
+<<<<<<< HEAD
 
+=======
+>>>>>>> 969b7a11232e65bf42329fa8a51a3a20d9a8a369
 }
 
 .left-header h1{
+  margin-left: -5%;
   font-weight: 900;
-  font-size: 6.5em;
+  font-size: 8vw;
   text-align: center;
 }
 
 .left-header .btn-holder{
-  margin-top:15vh;
+  margin-top:25%;
 }
 
 #heading{
@@ -189,7 +193,7 @@ footer{
 }
 
 #heading-sub{
-  font-size: 1.3em;
+  font-size: 2.5vw;
   line-height: 110%;
   margin-top: 10vh;
 }
@@ -367,7 +371,7 @@ footer{
 /*--------------------------------------------- Contact Page --------------------------------------------- */
 
 .contact-form{
-  margin:auto;
+  margin: auto;
   width: 80%;
   height: 80%;
 }
@@ -407,7 +411,7 @@ footer{
 #contact-form input{
   margin: 2.5% 0;
   border: 0;
-  height: 35px;
+  height: 4.5vh;
   border-radius: 10px;
   width: 100%;
   font-family: 'Montserrat' !important;
@@ -415,7 +419,7 @@ footer{
 }
 
 #contact-form textarea{
-  height: 115px;
+  height: 14vh;
   width: 102%;
   border-radius: 10px;
   margin-top: 2.5%;
@@ -423,14 +427,14 @@ footer{
 }
 
 .form-side .btn-holder{
-  margin-right: 10%;
+  margin-right: 2.5vw;
   margin-top:3%;
 }
 
 .btn-contact-form{
   background: #FFB240;
   float: right;
-  padding: 2.5% 28%;
+  padding: 1.25vh 6.5vw;
   text-align: center;
   color: white;
   line-height: 25px;
@@ -504,3 +508,29 @@ footer{
     opacity: 1;
   }
 }
+<<<<<<< HEAD
+=======
+
+
+/*--------------------------------------------- Media Queries --------------------------------------------- */
+
+@media only screen 
+  and (min-device-width: 834px) 
+  and (max-device-width: 1112px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+    .split-left1{
+      height: 60vh;
+    }
+    .split-left2{
+      height: 60vh;
+    }
+    .split-right1{
+      height: 60vh;
+    }
+    .split-right2{
+      height: 60vh;
+    }
+
+}
+>>>>>>> 969b7a11232e65bf42329fa8a51a3a20d9a8a369
