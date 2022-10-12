@@ -390,6 +390,8 @@ margin-right: 20%;
 .aboutP{
   width: 60vw;
   margin: 5% auto;
+  font-size: large;
+  line-height: 1.6;
 }
 
 .horisontalline{
@@ -511,7 +513,7 @@ margin-right: 20%;
 
 @keyframes slide-in-left {
   from {
-    transform: translateX(-100%);
+    transform: translateX(-300%);
   }
   to {
     transform: translateX(0%);
