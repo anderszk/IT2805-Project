@@ -428,7 +428,8 @@ footer{
 
 .sloganDiv{
   margin-top: 30%;
-  text-align: center;
+  margin-left: 15%;
+  text-align: left;
 }
 
 .about-split-right1 h1{
@@ -496,17 +497,49 @@ margin-right: 20%;
 
 /*--------------------------------------------- Ticket Page --------------------------------------------- */
 .ticket-split-sec1{
-  height: 70vh;
+  height: auto;
   width: 100%;
-  margin: 0 0;
-  margin-top: 30vh;
-  background-color: aquamarine;
+  margin: 30vh 0% 0 0%;
+  display: flex;
+  flex-direction: row;
+}
+
+.ticket-split-left1{
+  height: 100%;
+  float: left;
+  width: 30%;
+  padding-top: 5%; 
+  text-align: center;
+}
+
+.ticket-split-right1{
+  height: 100%;
+  float: right;
+  width: 40%;
+}
+
+
+.ticketDiv{
+  text-align: center;
+  width: 100; 
+  margin: 19% auto;
+
 }
 
 .bigtext{
   font-size: 3.5vw;
   font-weight: bold;
   color: #BD4848;
+  margin: 0 0 0 40%;
+}
+
+.vertiacallineTicket{
+  background-color: yellow;
+  background-color: #FFB240;
+  float: right;
+  width: 1.3%;
+  height: 45vh;
+  margin: auto;
 }
 /*--------------------------------------------- Contact Page --------------------------------------------- */
 .contact-form{
