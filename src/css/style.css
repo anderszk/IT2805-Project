@@ -508,6 +508,43 @@ margin-right: 20%;
   font-weight: bold;
   color: #BD4848;
 }
+
+.ticket-menu-wrapper{
+  width: 100%;
+  margin: 10% 0;
+}
+
+.ticket-menu{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 18%;
+}
+
+.ticket-menu a{
+}
+
+.ticket-menu button{
+  width: 15vw;
+  background-color: transparent;
+  font-size: 24px;
+  font-family: 'Montserrat';
+  border: 0;
+  font-weight: 500;
+  color: #FFFFFF;
+}
+
+.ticket-menu button:hover{
+  color: #BD4848;
+}
+
+.ticket-menu-sep{
+  background-color: #BD4848;
+  width: .2vw;
+  height: 7vh;
+  justify-content: space-between;
+}
+
 /*--------------------------------------------- Contact Page --------------------------------------------- */
 .contact-form{
   margin: auto;
@@ -664,6 +701,20 @@ margin-right: 20%;
   to {
     opacity: 1;
   }
+}
+
+@keyframes fade-in-color {
+  from {
+    background-color: transparent;
+  }
+  to {
+    background-color:#BD4848;
+  }
+}
+
+@keyframes spin {
+  from {transform:rotate(0deg);}
+  to {transform:rotate(360deg);}
 }
 
 .slide-in-right{
