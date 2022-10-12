@@ -213,6 +213,13 @@ footer{
 #footer-creds{
   text-align: center;
   font-size: 12px;
+  margin-bottom: 5%;
+
+}
+
+.footer-credits{
+  padding-bottom: 2%;
+  height: 2vh;
 }
 
 .footer-logo{
@@ -232,6 +239,10 @@ footer{
   margin-top: -2vh;
 }
 
+.footer-right-container{
+
+}
+
 .footer-left{
   display: flex;
   flex-direction: row;
@@ -249,22 +260,23 @@ footer{
 .holder{
   width: 100%;
   display: flex;
-  flex-direction: row;
 }
 
 
 .footer-split-left{
+  margin-left: 5vw;
   float: left;
   width: 25%;
 }
 .footer-split-right{
-  width: 20%;
+  width: 50%;
   float: right;
 }
 
 .footer-right{
   width: 20%;
   float: right;
+  margin: 0 auto;
 }
 
 
