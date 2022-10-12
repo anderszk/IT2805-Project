@@ -200,7 +200,66 @@ footer{
 }
 
 
+/*--------------------------------------------- Footer --------------------------------------------- */
+
+.footer-wrapper{
+  width: 100%;
+  height: 100%;
+  margin-top: 5%;
+}
+
+
+
+#footer-creds{
+  text-align: center;
+  font-size: .8vw;
+}
+
+.footer-logo{
+  float: left;
+  height: 10vh;
+  margin-right:5%
+}
+
+.vertiacalline-footer{
+  background-color: yellow;
+  background-color: #FFB240;
+  float: right;
+  width: 5px;
+  height: 20vh;
+  margin-right: 5%;
+  margin-top: 7%;
+}
+
+.footer-left{
+  width: 50%;
+  height: 100%;
+}
+
+.sloganDiv-footer{
+  font-size: .6vw;
+  color: #BD4848;
+}
+
+
+
+.footer-split-left{
+  float: left;
+}
+.footer-split-right{
+  float: left;
+}
+
+
+
+
+
+
+
+
+
 /*--------------------------------------------- Split Section 1 --------------------------------------------- */
+
 
 .split-sec{
   height: 90vh;

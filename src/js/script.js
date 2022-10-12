@@ -1,3 +1,7 @@
+let footercreds = document.getElementById("footer-creds");
+footercreds.textContent = "A website by Anders Kristensen and Thomas Engum | Copyright @ "+new Date().getFullYear();
+
+
 window.onscroll = function() {
     scrollFunction()
 };
@@ -63,3 +67,5 @@ async function message_sent(){
 function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+
+
