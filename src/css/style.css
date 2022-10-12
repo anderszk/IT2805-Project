@@ -212,26 +212,29 @@ footer{
 
 #footer-creds{
   text-align: center;
-  font-size: .8vw;
+  font-size: 12px;
 }
 
 .footer-logo{
   float: left;
   height: 10vh;
-  margin-right:5%
+  margin-top: 10%;
+  margin-left: 2vw;
 }
 
 .vertiacalline-footer{
   background-color: yellow;
   background-color: #FFB240;
   float: right;
-  width: 5px;
-  height: 20vh;
+  width: 4px;
+  height: 18vh;
   margin-right: 5%;
-  margin-top: 7%;
+  margin-top: -2vh;
 }
 
 .footer-left{
+  display: flex;
+  flex-direction: row;
   width: 50%;
   height: 100%;
 }
@@ -239,15 +242,29 @@ footer{
 .sloganDiv-footer{
   font-size: .6vw;
   color: #BD4848;
+  margin-top: 2vh;
+  margin-left: 2.5vw;
 }
 
+.holder{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
 
 
 .footer-split-left{
   float: left;
+  width: 25%;
 }
 .footer-split-right{
-  float: left;
+  width: 20%;
+  float: right;
+}
+
+.footer-right{
+  width: 20%;
+  float: right;
 }
 
 
