@@ -40,7 +40,7 @@ p{
   border-bottom: 6px solid #BD4848;
   border-color: #BD4848;
   color: #BD4848;
-  font-size: 1.2em;
+  font-size: 1.4vw;
   z-index: 99999;
 }
 
@@ -236,6 +236,7 @@ footer{
   width: 4px;
   height: 18vh;
   margin-right: .5vw;
+  margin-left: 1vw;
   margin-top: -2vh;
 }
 
@@ -385,6 +386,11 @@ footer{
 
 .about-split-sec{
   height: 90vh;
+  width: 100%;
+  margin: 0 0;
+}
+
+.about-split-sec3{
   width: 100%;
   margin: 0 0;
 }
@@ -654,6 +660,11 @@ margin-right: 20%;
   text-decoration: none;
 }
 
+.flashing{
+  animation: flash .00005s;
+  animation-iteration-count: infinite;
+}
+
 .btn-contact-form:hover{
     box-sizing: border-box;
     background: #FFFFFF;
@@ -782,4 +793,12 @@ margin-right: 20%;
       height: 60vh;
     }
 
+}
+
+@keyframes flash{
+  0% {background-color: #000;}
+  25% {background-color:#FFF;}
+  50% {background-color:rgb(65, 30, 177);}
+  75% {background-color:rgb(255, 238, 0);}
+  100% {background-color:rgb(0, 255, 213);}
 }
