@@ -13,5 +13,7 @@ The website was made for a fictional company named Clarity, which is a crypto cu
 
 We used HTML5/CSS3/JS to implement the concepts, as framworks such as react.js were not allowed. 
 
+HOSTED ON [HERE](https://folk.ntnu.no/anderszk/IT2805-Project/src/)
+
 <p align="right">(<a href="#top">back to top</a>)</p>
 
