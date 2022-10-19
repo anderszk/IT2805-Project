@@ -11,7 +11,7 @@
   </head>
   <body>
     <div class="wrapper" style="margin: auto;">
-      <div class="navbar sticky" id="navbar">
+      <div class="navbar sticky">
           <a href="index.html"><img src="img/clarity.ico" alt="HomePage" id="navbar-icon"></a>
           <ul>
           <li><a class="inactive" href="index.html">Home</a></li>
@@ -22,32 +22,96 @@
 
       <div class="ticket-menu-wrapper">
         <div class="ticket-menu">
-            <button> <span class="ticket-menu-active">Student</span> </button>
+            <button onclick="changeTicket('student')"> <span class="ticket-menu-active">Student</span> </button>
             <div class="ticket-menu-sep" href="google.com"></div>
-            <button>Adult</button>
+            <button onclick="changeTicket('adult')">Adult</button>
             <div class="ticket-menu-sep" href="google.com"></div>
-            <button>Children</button>
+            <button onclick="changeTicket('children')">Children</button>
             <div class="ticket-menu-sep" href="google.com"></div>
-            <button>Partners</button>
+            <button onclick="changeTicket('partner')">Partners</button>
         </div>
       </div>
 
-          <div class="ticket-split-sec1">
-            <div class="ticket-split-left1">
-              <div class="logolinecontainer">
-                <span class="bigtext">Student</span>
+
+          <div class="ticket-card-wrapper">
+
+            <div class="ticket-split-sec1" id="student">
+              <div class="ticket-split-left1">
+                <div class="logolinecontainer">
+                  <span class="bigtext">Student</span>
+                </div>
+              </div>
+              <div class="vertiacallineTicket"></div>
+              <div class="ticket-split-right1">
+                <div class="ticketDiv">
+                  <h2>Clarity ICO Ticket</h2>
+                  <p>Exclusive ticket to the ICO with a special discounted student price. <br>
+                     Valid only with student card and paid semester-fee. Need to be shown at the entrance. </p>
+                  <a>399 NOK</a>
+                  
+                </div>
+      
               </div>
             </div>
-            <div class="vertiacallineTicket"></div>
-            <div class="ticket-split-right1">
-              <div class="ticketDiv">
-                <h2>Clarity ICO Ticket</h2>
-                <p>Exclusive ticket to the ico with special student price. <br>
-                   Valid student card required at entrance </p>
-                <a>Button</a>
-                
+
+            <div class="ticket-split-sec1" id="children">
+              <div class="ticket-split-left1">
+                <div class="logolinecontainer">
+                  <span class="bigtext">Children</span>
+                </div>
               </div>
-    
+              <div class="vertiacallineTicket"></div>
+              <div class="ticket-split-right1">
+                <div class="ticketDiv">
+                  <h2>Clarity ICO Ticket</h2>
+                  <p>Do you have a children? <br> don't worry! We got you covered.
+                  With our child-ticket, you and your child can enjoy a lunch and all
+                the facilities available in the venue with a 50% discounted price! </p>
+                  <a>199 NOK</a>
+                  
+                </div>
+      
+              </div>
+            </div>
+
+            <div class="ticket-split-sec1" id="adult">
+              <div class="ticket-split-left1">
+                <div class="logolinecontainer">
+                  <span class="bigtext">Adult</span>
+                </div>
+              </div>
+              <div class="vertiacallineTicket"></div>
+              <div class="ticket-split-right1">
+                <div class="ticketDiv">
+                  <h2>Clarity ICO Ticket</h2>
+                  <p>Standard ticket for the ICO event, including entrance and access
+                    to the networking area, lunch and panels. The ticket is a digital
+                    ticket received through email with a QR-code. </p>
+                  <a>599 NOK</a>
+                  
+                </div>
+      
+              </div>
+            </div>
+
+            <div class="ticket-split-sec1" id="partner">
+              <div class="ticket-split-left1">
+                <div class="logolinecontainer">
+                  <span class="bigtext">Partner</span>
+                </div>
+              </div>
+              <div class="vertiacallineTicket"></div>
+              <div class="ticket-split-right1">
+                <div class="ticketDiv">
+                  <h2>Clarity ICO Ticket</h2>
+                  <p>Exclusive ticket as a partner. This will give you an all-access pass
+                    and the opportunity to have a reserved stand area for your company.
+                  If your are attending as a private partner, you will get access to the VIP-lounge aswell. </p>
+                  <a>Contact Us</a>
+                  
+                </div>
+      
+              </div>
             </div>
           </div>
       
