@@ -47,7 +47,7 @@
                   <h2>Clarity ICO Ticket</h2>
                   <p>Exclusive ticket to the ICO with a special discounted student price. <br>
                      Valid only with student card and paid semester-fee. Need to be shown at the entrance. </p>
-                  <a class="btn" onclick="someFunction();">399 NOK</a>
+                  <a id="myBtn" class="btn" onclick="message_sent">399 NOK</a>
                   
                 </div>
       
@@ -116,6 +116,61 @@
           </div>
       
 
+          <div class="contact-form" style="display: none;">
+            <div class="map-side">
+              <!--The div element for the map -->
+              <div id="map"></div>
+            </div>
+            <div class="form-side">
+              <h1>Contact Us!</h1>
+              <form id="contact-form">
+                <input type="text" id="fname" name="fname" placeholder="Name.."><br>
+                <input type="text" id="phone" name="phone" placeholder="Phone..">
+                <input type="text" id="mail" name="mail" placeholder="Email.."><br>
+                <textarea name="request" cols="40" rows="5" id="msg" placeholder="What's on your mind?.."></textarea>
+              </form>
+              <div class="btn-holder" id="send-msg">
+                <a class="btn-contact-form" onclick="message_sent()">Send Message</a>
+              </div>
+              <div class="btn-holder" id="send-msg-confirmed">
+                <h2>Message sent! ✓</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-body">
+
+
+      <div class="contact-form">
+
+        <div class="form-side" style="float:none; width: 100%;">
+          <h1 class="pretty-font">Contact Us!</h1>
+          <form id="contact-form" style="width: 100%;">
+            <input type="text" id="fname" name="fname" placeholder="Name.."><br>
+            <input type="text" id="phone" name="phone" placeholder="Phone..">
+            <input type="text" id="mail" name="mail" placeholder="Email.."><br>
+            <textarea name="request" cols="40" rows="5" id="msg" placeholder="What's on your mind?.."></textarea>
+          </form>
+          <div class="btn-holder2" id="send-msg">
+            <a class="btn-contact-form2 btn-holder2" onclick="message_sent()"> <span class="pretty-font">Send Message</span></a>
+          </div>
+          <div class="btn-holder2" style="margin-top: 0;" id="send-msg">
+            <a class="btn-contact-form2 btn-holder2 close"> <span class="pretty-font">Close</span></a>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</div>
+
 
         <footer>
 
@@ -158,8 +213,8 @@
 
     </div>
 
-    <script>src="js/script.js"  </script>
-    <script>src="js/ticket.js"  </script>
+    <script src="js/script.js">  </script>
+    <script src="js/ticket.js">  </script>
   <script src="js/contactInfo.js"></script>
   <script src="js/maps.js"></script>
   </body>
