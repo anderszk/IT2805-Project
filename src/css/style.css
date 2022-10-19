@@ -623,6 +623,7 @@ margin-right: 20%;
   float: right;
 }
 
+
 .form-side h1{
   font-size: 2.5em;
   text-align: center;
@@ -654,15 +655,42 @@ margin-right: 20%;
   margin-top: 2.5%;
   font-family: 'Montserrat' !important;
 }
+.pretty-font{
+  width: 102%;
+  border-radius: 10px;
+  margin-top: 2.5%;
+  font-family: 'Montserrat' !important
+}
 
 .form-side .btn-holder{
   margin-right: 2.5vw;
   margin-top:3%;
 }
 
+
+.form-side .btn-holder2{
+  margin-right: 3% auto;
+  text-align: center;
+  min-height: 50px;
+  margin-top: 7%;
+}
+
 .btn-contact-form{
   background: #FFB240;
   float: right;
+  padding: 1.25vh 6.5vw;
+  text-align: center;
+  color: white;
+  line-height: 25px;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 200px;
+  transition: all .3s ease-out;
+  text-decoration: none;
+}
+
+.btn-contact-form2{
+  background: #FFB240;
   padding: 1.25vh 6.5vw;
   text-align: center;
   color: white;
@@ -700,6 +728,76 @@ margin-right: 20%;
   font-weight: 500;
   margin: 0 0 0 15%;
 }
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  position: relative;
+  background-color: #161616;
+  margin: 5% auto;
+  padding: 0;
+  border: 1px solid #060606;
+  width: 30%;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s;  
+  border-radius: 20px;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {top:-300px; opacity:0} 
+  to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+  from {top:-300px; opacity:0}
+  to {top:0; opacity:1}
+}
+
+.modal-body {
+  background-color: #161616;
+  padding: 2px 16px;
+  border-radius: 20px;
+}
+.close {
+  color: white;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal-header {
+  padding: 2px 16px;
+  background-color: #161616;
+  border-radius: 20px;
+  text-align: center;
+  color: #BD4848;
+}
+
 
 @keyframes slide-in-left {
   from {

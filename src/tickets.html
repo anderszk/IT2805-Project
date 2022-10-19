@@ -47,7 +47,7 @@
                   <h2>Clarity ICO Ticket</h2>
                   <p>Exclusive ticket to the ICO with a special discounted student price. <br>
                      Valid only with student card and paid semester-fee. Need to be shown at the entrance. </p>
-                  <a id="myBtn" class="btn" onclick="message_sent">399 NOK</a>
+                  <a id="myBtn" class="btn">399 NOK</a>
                   
                 </div>
       
@@ -67,7 +67,7 @@
                   <p>Do you have children? <br> don't worry! We got you covered.
                   With our child-ticket, you and your child can enjoy a lunch and all
                 the facilities available in the venue with a 50% discounted price! </p>
-                  <a class="btn">199 NOK</a>
+                  <a id="myBtn2" class="btn">199 NOK</a>
                   
                 </div>
       
@@ -144,13 +144,16 @@
 
   <!-- Modal content -->
   <div class="modal-content">
+    <div class="modal-header">
+      <span class="close">&times;</span>
+          <h1 class="pretty-font">Contact Us!</h1>
+    </div>
     <div class="modal-body">
 
 
       <div class="contact-form">
 
         <div class="form-side" style="float:none; width: 100%;">
-          <h1 class="pretty-font">Contact Us!</h1>
           <form id="contact-form" style="width: 100%;">
             <input type="text" id="fname" name="fname" placeholder="Name.."><br>
             <input type="text" id="phone" name="phone" placeholder="Phone..">
@@ -160,9 +163,7 @@
           <div class="btn-holder2" id="send-msg">
             <a class="btn-contact-form2 btn-holder2" onclick="message_sent()"> <span class="pretty-font">Send Message</span></a>
           </div>
-          <div class="btn-holder2" style="margin-top: 0;" id="send-msg">
-            <a class="btn-contact-form2 btn-holder2 close"> <span class="pretty-font">Close</span></a>
-          </div>
+          <span class="close">&times;</span>
         </div>
       </div>
 
