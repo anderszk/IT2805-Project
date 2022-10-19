@@ -7,7 +7,7 @@ window.onscroll = function() {
     scrollFunction()
 };
 
-function scrollFunction() {
+const scrollFunction = () => {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("navbar").style.backgroundColor= "#161616";
         document.getElementById("navbar").style.borderColor= "transparent";
@@ -18,33 +18,37 @@ function scrollFunction() {
     }
 }
 
-function formValidation() {
+const formValidation = () => {
     let name = document.forms["contact-form"]["fname"].value;
     let phone = document.forms["contact-form"]["phone"].value;
-    let mail = document.forms["contact-form"]["mail"].value
-    if (!name_validator()) {
+    let mail = document.forms["contact-form"]["mail"].value;
+    if (!name_validator(name)) {
         
     }
-    else if (!phone_validator()) {
+    else if (!phone_validator(phone)) {
 
     }
-    else if (!mail_validator()) {
+    else if (!mail_validator(mail)) {
 
     }
-    else{return;} //else submit form
+    else{console.log(name, phone, mail)} //else submit form
 }
 
-function name_validator(name) {
-    //only char
+const name_validator = (name) => {
+    return /^[a-zA-Z]+$/.test(name);
 }
 
-function phone_validator(phone) {
-    //length 8 only char
+const phone_validator = (phone) => {
+    return phone.length === 8 && /^\d+$/.test(phone);
 }
 
-function mail_validator(mail) {
-    //right .com and have @
-}
+const mail_validator = (email) => {
+    return String(email)
+      .toLowerCase()
+      .match(
+        /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+      );
+  };
 
 async function message_sent(){
     console.log("hello");
@@ -70,37 +74,6 @@ function sleep(ms) {
 }
 
 
-
-async function changeTicket(new_ticket){
-    let student = document.getElementById("student");
-    let adult = document.getElementById("adult");
-    let children = document.getElementById("children");
-    let partner = document.getElementById("partner");
-
-    var dict = {
-        "student": student,
-        "adult": adult,
-        "children": children,
-        "partner": partner
-      };
-
-    let animation_timer = 200
     
-    dict[ticket_state].style.animation = "ticket-out 500ms";
-    await new Promise(r => setTimeout(r, animation_timer));
-    dict[ticket_state].style.display = "none";
-    dict[new_ticket].style.display = "flex";
-    dict[new_ticket].style.animation = "ticket-in 500ms"
-
-    ticket_state = new_ticket;
-
-    
-
-
-}
-
-function ticketCarousel(){
-
-}
 
 
