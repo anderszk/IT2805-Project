@@ -304,6 +304,7 @@ footer{
 .footer-right-container a{
   font-size: 1.6vw;
   font-weight: 500;
+  text-decoration: none;
 }
 
 
