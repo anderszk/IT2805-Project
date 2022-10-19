@@ -1,7 +1,6 @@
 let footercreds = document.getElementById("footer-creds");
 footercreds.textContent = "A website by Anders Kristensen and Thomas Engum | Copyright @ "+new Date().getFullYear();
 
-let ticket_state = "student";
 
 window.onscroll = function() {
     scrollFunction()
