@@ -33,27 +33,21 @@ p{
 
 
 .navbar {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-content: center;
+
+  padding-left: 3%;
+
   text-align: center;
   height: 140px;
   width: 100%;
   background-color: #161616;
   border-bottom: 6px solid #BD4848;
   border-color: #BD4848;
-  color: #BD4848;
-  font-size: 1.2em;
   z-index: 99999;
-}
-
-.navbar ul li{
-  display: inline-block;
-  margin-top: 3.5vh;
-  padding: 0.6% 7% 0 7%;
-  font-weight: 600;
-}
-
-.navbar ul{
-  width: 80%;
-  padding-inline-start: 0px;
 }
 
 .sticky {
@@ -61,35 +55,6 @@ p{
   position: fixed;
   width: 100%;
 }
-
-.navbar a{
-  text-decoration: none;
-}
-
-.inactive{
-  color: #BD4848;
-  font-size: 1.25em;
-  transition: 100ms ease-in;
-}
-
-.inactive:hover{
-  text-decoration: underline;
-  opacity: .8;
-  transition: 100ms ease-in;
-}
-
-.active{
-  font-size: 1.25em;
-  color: #FFB240;
-  transition: 100ms ease-in;
-}
-
-.active:hover{
-  text-decoration: underline;
-  opacity: .8;
-  transition: 100ms ease-in;
-}
-
 
 .btn {
   background: #BD4848;
@@ -105,17 +70,18 @@ p{
 }
 
 .btn-nav{
-  background: #BD4848;
-  float: right;
-  padding: 15px 25px;
+  background: hsl(0, 47%, 51%);
+  padding: 10% 2vw;
   text-align: center;
   color: white;
-  line-height: 25px;
   font-weight: 500;
-  font-size: 0.8em;
+  font-size: 1vw;
   border-radius: 200px;
   transition: all .3s ease-out;
   text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
 }
 
 .btn:hover{
@@ -129,18 +95,68 @@ p{
 }
 
 .navbar .btn-holder{
-  margin: -65px 8vw 0 0;
+  margin: auto;
+  padding-right:5%;
+}
+
+.menu-items-tickets{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: auto;
+}
+
+.menu-items-tickets a{
+  align-items: center;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.menu-items{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.menu-items a{
+  align-items: center;
+  color: #BD4848;
+  font-size: 2vw;
+  font-weight: 500;
+}
+
+.menu-item-active{
+  color: #FFB240 !important;
+  cursor: pointer;
+}
+
+.menu-item-inactive:hover{
+  text-decoration: underline 2px;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.menu-item-inactive{
+  text-decoration: none;
+  color: #BD4848;
 }
 
 #navbar-icon{
-  height: 200px;
-  width: 200px;
-  float: left;
-  margin: -2% 0 0 5%;
+  position: relative;
+  height: 100%;
+  width: 100%;
 }
 
 #navbar-icon:hover{
   opacity: 0.8;
+}
+
+.menu-logo{
+  padding: 20px;
 }
 
 footer{
@@ -218,7 +234,7 @@ footer{
 }
 
 .footer-credits{
-  padding-bottom: 2%;
+  padding-bottom: 1%;
   height: 2vh;
 }
 
@@ -240,7 +256,12 @@ footer{
 }
 
 .footer-right-container{
-
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: right;
+  width: 60%;
+  height: 100%;
 }
 
 .footer-left{
@@ -274,9 +295,15 @@ footer{
 }
 
 .footer-right{
-  width: 20%;
-  float: right;
-  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 50%;
+}
+
+.footer-right-container a{
+  font-size: 1.6vw;
+  font-weight: 500;
 }
 
 
@@ -483,6 +510,12 @@ margin-right: 20%;
   line-height: 1.6;
 }
 
+.abouth2{
+  margin: auto;
+  width: 60vw;
+  font-size: large;
+}
+
 .horisontalline{
   background-color: yellow;
   background-color: #FFB240;
@@ -571,13 +604,18 @@ margin-right: 20%;
   color: #FFFFFF;
 }
 
-.ticket-menu button:hover{
+.ticket-menu-inactive:hover{
   color: #FFB240;
-  opacity: 0.8;
+  opacity: 1;
+  cursor: pointer;
 }
 
 .ticket-menu-active{
   color: #BD4848;
+}
+
+.ticket-menu-inactive{
+  color: #FFFFFF;
 }
 
 .ticket-menu-sep{
