@@ -499,7 +499,7 @@ margin-right: 20%;
 .ticket-split-sec1{
   height: auto;
   width: 70%;
-  margin: 4% 10% 6% 13%;
+  margin: 7% 10% 6% 13%;
   padding:0 5% 2% 0;
   display: flex;
   flex-direction: row;
@@ -558,7 +558,8 @@ margin-right: 20%;
   margin: 0 18%;
 }
 
-
+.ticket-menu a{
+}
 
 .ticket-menu button{
   width: 15vw;
@@ -571,8 +572,8 @@ margin-right: 20%;
 }
 
 .ticket-menu button:hover{
-  color: #BD4848;
-  opacity: 0.6;
+  color: #FFB240;
+  opacity: 0.8;
 }
 
 .ticket-menu-active{
@@ -585,6 +586,17 @@ margin-right: 20%;
   height: 7vh;
   justify-content: space-between;
 }
+
+.ticket-card-wrapper{ 
+}
+
+.ticketDiv p{
+
+}
+
+#adult{display:none}
+#children{display:none}
+#partner{display:none}
 
 /*--------------------------------------------- Contact Page --------------------------------------------- */
 .contact-form{
@@ -756,6 +768,28 @@ margin-right: 20%;
 @keyframes spin {
   from {transform:rotate(0deg);}
   to {transform:rotate(360deg);}
+}
+
+@keyframes ticket-out {
+  from {transform:translateX(0%);}
+  to {transform:translateX(-100%);}
+}
+
+@keyframes ticket-in {
+  from {transform:translateX(100%);}
+  to {transform:translateX(0%);}
+}
+
+.slide-in-right{
+  animation: slide-in 1s;
+}
+
+.slide-in-left{
+  animation: slide-in-left 1s;
+}
+
+.slide-in-up{
+  animation: slide-in-up 1s;
 }
 
 .slide-in-right{
