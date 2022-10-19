@@ -12,23 +12,33 @@
   <body>
     <div class="wrapper" style="margin: auto;">
       <div class="navbar sticky">
-          <a href="index.html"><img src="img/clarity.ico" alt="HomePage" id="navbar-icon"></a>
-          <ul>
-          <li><a class="inactive" href="index.html">Home</a></li>
-          <li><a class="inactive" href="about.html">About Us</a></li>
-          <li><a class="inactive " href="contact.html">Contact</a></li>
-          </ul>
-      </div>
+        <div class="menu-logo">
+             <a href="index.html"><img src="img/clarity.png" alt="HomePage" id="navbar-icon"></a>
+        </div>
+        <div class ="menu-items-tickets">
+            <a class="menu-item-inactive" href="index.html">Home</a>
+            <a class="menu-item-inactive" href="about.html">About Us</a>
+            <a class="menu-item-inactive" href="contact.html">Contact</a>
+        </div>
+    </div>
 
       <div class="ticket-menu-wrapper">
         <div class="ticket-menu">
-            <button onclick="changeTicket('student')"> <span class="ticket-menu-active">Student</span> </button>
-            <div class="ticket-menu-sep" href="google.com"></div>
-            <button onclick="changeTicket('adult')">Adult</button>
-            <div class="ticket-menu-sep" href="google.com"></div>
-            <button onclick="changeTicket('children')">Children</button>
-            <div class="ticket-menu-sep" href="google.com"></div>
-            <button onclick="changeTicket('partner')">Partners</button>
+            <button onclick="changeTicket('student')">
+              <span id="student-btn" class="ticket-menu-active">Student</span>
+            </button>
+            <div class="ticket-menu-sep"></div>
+            <button onclick="changeTicket('adult')">
+              <span id="adult-btn" class="ticket-menu-inactive">Adult</span>
+            </button>
+            <div class="ticket-menu-sep"></div>
+            <button onclick="changeTicket('children')">
+              <span id="children-btn" class="ticket-menu-inactive">Children</span>
+            </button>
+            <div class="ticket-menu-sep"></div>
+            <button onclick="changeTicket('partner')">
+              <span id="partner-btn" class="ticket-menu-inactive">Partner</span>
+            </button>
         </div>
       </div> 
 

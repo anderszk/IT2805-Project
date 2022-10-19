@@ -22,15 +22,18 @@ const formValidation = () => {
     let phone = document.forms["contact-form"]["phone"].value;
     let mail = document.forms["contact-form"]["mail"].value;
     if (!name_validator(name)) {
-        
+        console.log("Wrong name")
     }
     else if (!phone_validator(phone)) {
-
+        console.log("Wrong phone")
     }
     else if (!mail_validator(mail)) {
-
+        console.log("Wrong mail")
     }
-    else{console.log(name, phone, mail)} //else submit form
+    else{
+        console.log(name, phone, mail);
+        message_sent();
+    } //else submit form
 }
 
 const name_validator = (name) => {
@@ -50,7 +53,6 @@ const mail_validator = (email) => {
   };
 
 async function message_sent(){
-    console.log("hello");
     let button = document.getElementById("send-msg");
     let confirmation = document.getElementById("send-msg-confirmed");
 
