@@ -75,6 +75,30 @@ function sleep(ms) {
 }
 
 
+const timer = setInterval(() => {
+    var countDownDate = new Date("Nov 21, 2022 23:59:59").getTime();
+    var now = new Date().getTime();
+
+    var delta = countDownDate - now;
+
+    var days = Math.floor(delta / (1000 * 60 * 60 * 24));
+    var hours = Math.floor((delta % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    var minutes = Math.floor((delta % (1000 * 60 * 60)) / (1000 * 60));
+    var seconds = Math.floor((delta % (1000 * 60)) / 1000);
+
+    document.getElementById("time").innerHTML = days + "d " + hours + "h "
+    + minutes + "m " + seconds + "s ";
+
+    // If the count down is finished, write some text
+    if (delta < 0) {
+        clearInterval(x);
+        document.getElementById("time").innerHTML = "Welcome!";
+    }
+    }, 1000);
+
+timer();
+
+
     
 
 
