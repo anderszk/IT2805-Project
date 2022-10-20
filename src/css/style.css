@@ -108,6 +108,10 @@ p{
   margin: auto;
 }
 
+.ml20{
+  margin-right: 20%;
+}
+
 .menu-items-tickets a{
   align-items: center;
   font-size: 2vw;
@@ -157,8 +161,8 @@ p{
 
 .menu-logo{
   padding: 20px;
-  height: 12vh;
-  width: 12vh;
+  height: 7vw;
+  width: 7vw;
 }
 
 footer{
@@ -640,7 +644,10 @@ margin-right: 20%;
   margin: 0 18%;
 }
 
-.ticket-menu a{
+
+
+.ticket-menu span{
+  font-size: 1.6vw;
 }
 
 .ticket-menu button{
