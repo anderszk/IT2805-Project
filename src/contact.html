@@ -1,95 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Clarity - Contact Us</title>
-    <link href='https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700' rel='stylesheet'>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" type="image/x-icon" href="img/clarity.ico">
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/clarity.ico" />
   </head>
   <body>
     <div class="wrapper">
       <div class="navbar sticky slide-in-down">
         <div class="menu-logo">
-             <a href="index.html"><img src="img/clarity.png" alt="HomePage" id="navbar-icon"></a>
+          <a href="index.html"
+            ><img src="img/clarity.png" alt="HomePage" id="navbar-icon"
+          /></a>
         </div>
-        <div class ="menu-items">
-            <a class="menu-item-inactive" href="index.html">Home</a>
-            <a class="menu-item-inactive" href="about.html">About Us</a>
-            <a class="menu-item-active">Contact</a>
+        <div class="menu-items">
+          <a class="menu-item-inactive" href="index.html">Home</a>
+          <a class="menu-item-inactive" href="about.html">About Us</a>
+          <a class="menu-item-active">Contact</a>
         </div>
         <div class="btn-holder">
-            <a class="btn-nav" href="tickets.html">Buy Tickets now</a>
+          <a class="btn-nav" href="tickets.html">Buy Tickets now</a>
         </div>
-    </div>
+      </div>
 
-        <div class="no-scroll-page">
-          
-
-          <div class="contact-form">
-            <div class="map-side">
-              <!--The div element for the map -->
-              <div id="map"></div>
+      <div class="no-scroll-page">
+        <div class="contact-form">
+          <div class="map-side">
+            <!--The div element for the map -->
+            <div id="map"></div>
+          </div>
+          <div class="form-side">
+            <h1>Contact Us!</h1>
+            <form id="contact-form">
+              <input
+                type="text"
+                id="fname"
+                name="fname"
+                placeholder="Name.."
+                required
+              /><br />
+              <input
+                type="text"
+                id="phone"
+                name="phone"
+                placeholder="Phone.."
+                required
+              />
+              <input
+                type="text"
+                id="mail"
+                name="mail"
+                placeholder="Email.."
+                required
+              /><br />
+              <textarea
+                name="request"
+                cols="40"
+                rows="5"
+                id="msg"
+                placeholder="What's on your mind?.."
+              ></textarea>
+            </form>
+            <div class="btn-holder" id="send-msg">
+              <a class="btn-contact-form" onclick="formValidation()"
+                >Send Message</a
+              >
             </div>
-            <div class="form-side">
-              <h1>Contact Us!</h1>
-              <form id="contact-form">
-                <input type="text" id="fname" name="fname" placeholder="Name.." required><br>
-                <input type="text" id="phone" name="phone" placeholder="Phone.." required>
-                <input type="text" id="mail" name="mail" placeholder="Email.." required><br>
-                <textarea name="request" cols="40" rows="5" id="msg" placeholder="What's on your mind?.."></textarea>
-              </form>
-              <div class="btn-holder" id="send-msg">
-                <a class="btn-contact-form" onclick="formValidation()">Send Message</a>
-              </div>
-              <div class="btn-holder" id="send-msg-confirmed">
-                <h2>Message sent! ✓</h2>
-              </div>
+            <div class="btn-holder" id="send-msg-confirmed">
+              <h2>Message sent! ✓</h2>
             </div>
           </div>
         </div>
+      </div>
 
+      <footer>
+        <div class="footer-wrapper">
+          <div class="holder">
+            <div class="footer-left">
+              <div class="footer-split-left">
+                <img class="footer-logo" slide-in-left" src="img/clarity.png"
+                alt="clarity logo">
+                <div class="vertiacalline-footer"></div>
+              </div>
 
-        <footer>
-          <div class="footer-wrapper">
-              <div class="holder">
-              <div class="footer-left">
-                      <div class="footer-split-left">
-                          <img class="footer-logo" slide-in-left" src="img/clarity.png" alt="clarity logo">
-                          <div class="vertiacalline-footer"></div>
-                      </div>
-                  
-          
-                      <div class="footer-split-right">
-                          <div class="sloganDiv-footer">
-                              <h1 class=""><span>DECENTRALIZED.</span></h1>
-                              <h1><span>HITCOIN.</span></h1>
-                              <h1><span>INNOVATION.</span></h1>
-                          </div>
-                      </div>
+              <div class="footer-split-right">
+                <div class="sloganDiv-footer">
+                  <h1 class=""><span>DECENTRALIZED.</span></h1>
+                  <h1><span>HITCOIN.</span></h1>
+                  <h1><span>INNOVATION.</span></h1>
+                </div>
               </div>
-              <div class="footer-right">
-                  <div class="footer-right-container">
-                      <a class="menu-item-inactive" href="index.html">Home</a>
-                      <a class="menu-item-inactive" href="about.html">About Us</a>
-                      <a class="menu-item-active" href="contact.html">Contact</a>
-                      <a class="menu-item-inactive" href="tickets.html">Tickets</a>
-                  </div>
+            </div>
+            <div class="footer-right">
+              <div class="footer-right-container">
+                <a class="menu-item-inactive" href="index.html">Home</a>
+                <a class="menu-item-inactive" href="about.html">About Us</a>
+                <a class="menu-item-active" href="contact.html">Contact</a>
+                <a class="menu-item-inactive" href="tickets.html">Tickets</a>
               </div>
+            </div>
           </div>
-              <div class="footer-credits">
-                  <p id="footer-creds"></p>
-              </div>
+          <div class="footer-credits">
+            <p id="footer-creds"></p>
           </div>
+        </div>
       </footer>
-
     </div>
     <script
-    async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_6x_KsOWokLAtMSbhJx7W0yNwy3MtEA&callback=initMap"
-  ></script>
-  <script src="js/script.js"></script>
-  <script src="js/maps.js"></script>
+      async
+      defer
+      src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCo_6x_KsOWokLAtMSbhJx7W0yNwy3MtEA&callback=initMap"
+    ></script>
+    <script src="js/script.js"></script>
+    <script src="js/maps.js"></script>
   </body>
 </html>
