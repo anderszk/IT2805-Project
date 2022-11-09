@@ -1,5 +1,13 @@
 let ticket_state = "student";
 
+/**
+ * This function is used to both change and simulate the carousel function using 
+ * DOM-manipulation with html-content and CSS
+ * 
+ * @param new_ticket the argument from the user (selected ticket type)
+ * @returns None
+ */
+
 async function changeTicket(new_ticket) {
   let student = document.getElementById("student");
   let adult = document.getElementById("adult");

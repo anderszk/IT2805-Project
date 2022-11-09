@@ -892,7 +892,7 @@ footer {
 
 .close:hover,
 .close:focus {
-  color: #000;
+  color: #bd4848;
   text-decoration: none;
   cursor: pointer;
 }

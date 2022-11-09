@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>P3 - Changes - Gruppe 69</title>
+    <link
+        href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,600,700"
+        rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" type="image/x-icon" href="img/clarity.ico" />
+  </head>
+  <body class="parallax">
+    <div class="wrapper">
+      <header>
+        <h1>P3: Changes</h1>
+        <h2>Anders Kristensen og Thomas Engum</h2>
+        <p>09 - 11 - 2022</p>
+        <div class="scroll-downs">
+            <div class="mousey">
+              <div class="scroller"></div>
+            </div>
+          </div>
+      </header>
+      <div class="content">
+        <div class="admin">
+            <div class="admin-row">
+                <div class="admin-col1">
+                    <p>Client Name:</p>
+                    <p>Website Name:</p>
+                    <p>Contact Person:</p>
+                </div>
+                <div class="admin-col2">
+                    <p>Clarity AS</p>
+                    <p>Clarity - ICO Event</p>
+                    <p>Thomas Engum</p>
+                </div>
+            </div>
+            <a
+                class="btn"
+                href="https://folk.ntnu.no/anderszk/IT2805-Project/src/"
+                target="_blank"
+                >Visit Homepage
+            </a>
+        </div>
+        <div class="subsection">
+            <h1 class="header-head">Changes</h1>
+            <div class="changes-content">
+                <h2>Comments</h2>
+                <p>We got rewarded by putting effort into the prototype and design, at it was easily implemented
+                    in code because of the detailed and clear design. By making a prototype we could test the
+                    functionality and make sure that we got everything planned beforehand. We kept the design
+                    primarly to the prototype with minimal devience. We also ended up with the same amount of pages
+                    hat we originally planned with. <br><br>
+                    If we could improve something, it would have been refactoring code in the .html- and .css-files.
+                    We could have made mgeneral css-classes so the file would have been shorter. Because the use of Bootstrap
+                    and Tailwind libraries were restricted, we decided that this was an issue of lower priority.<br><br>
+                    We used modularity for the navigation bar, which resulted in a really clean html-code for the navbar with
+                    just an empty div. This felt kind of like very scuffed React, and we decided on not continue using it for
+                    the footer and the rest as it is tideous work with little to gain.                    
+                </p>
+
+                <h2>Change 1: Remove Footer CTA</h2>
+                <p>As we used CTA's throughout the whole front-page, and the header is sticky, we decided on not
+                    including it in the footer. For the visibility and affordance of the site, we concluded with
+                    the footer CTA not being a cruical element as there is a CTA in the header. It would make more
+                    noise than helping the user, which in generel is a bad thing. It also made the footer more airy,
+                    which aestethically looks better.
+                </p>
+
+                <h2>Change 2: Add Timer to Homepage</h2>
+                <p>Because we needed JavaScript functions, we though that it would be nice with a countdown-timer, as
+                    this is an event. It would add some motion to the home-page which also would deliver the information
+                    in an appropriate way without bringing noise, as the element is rather small. This was done using the
+                    Date-function in JS.
+                </p>
+
+                <h2>Change 3: Add sub-menu to ticket</h2>
+                <p>We originially decided on going for a conventional carousel with arrows. This is a method that is well known
+                    by users and would be fine. The disadvantage with using a carousel is that it would show little to none visibility
+                    of the ticket-options. As the design layout for the tickets are the same, we found it more usefull using a sub-menu
+                    that will display all the options to the user, and rather animate the carousel-effect using JavaScript.
+                </p>
+
+                <h2>Change 4: Added dedicated .js-file for <br>contactInfo and modules</h2>
+                <p>To have a better overview of the functionality, we decided on adding a dedicated JavaScript-file for the contact info.
+                    By doing this, we could organize the code in a better way, and not having to load the file on every page, effectively
+                    increasing the performance of the site. <br><br>
+                    The same arguments applies to the decision of making a dedicated file for the modules. 
+                </p>
+
+                <h2>Change 5: Colors of the menu-items</h2>
+                <p>We decided on making the menu-items red. On hover, it will lower its opacity and have an underline. When active (current site),
+                    it will be yellow (seondary color). This will help increase the affordance of the navbar, while also increasing universal design
+                    by adding more contrast to the different states. This was applied on both the navbar, and footer-menu.
+                </p>
+            </div>
+        </div>
+        <div class="subsection">
+            <h1 class="header-head">Updated Document Tree</h1>
+                <div class="file-structure">
+                  <ul class="file-ul">
+                    <li>index.html (Homepage)</li>
+                    <li>about.html</li>
+                    <li>tickets.html</li>
+                    <li>contact.html</li>
+                    <li>
+                      css/
+                      <ul>
+                        <li>style.css</li>
+                      </ul>
+                    </li>
+                    <li>
+                      img/
+                      <ul>
+                        <li>aboutus_sec.jpg</li>
+                        <li>clarity.ico</li>
+                        <li>clarity.png</li>
+                        <li>header.jpg</li>
+                        <li>homesplit1.jpg</li>
+                        <li>homesplit2.jpg</li>
+                        <li>logo.png</li>
+                      </ul>
+                    </li>
+                    <li>
+                      js/
+                      <ul>
+                        <li>contactInfo.js</li>
+                        <li>maps.js</li>
+                        <li>script.js</li>
+                        <li>ticket_carousel.js</li>
+                      </ul>
+                    </li>
+                  </ul>
+              </div>
+        </div>
+        <div class="subsection bigheady">
+            <h1 class="header-head">Final Work Division</h1>
+            <div class="files-table">
+                <div class="flex-col textAlignLeft" style="margin-right: 20%;">
+                    <h2>File</h2>
+                    <p>index.html</p>
+                    <p>about.html</p>
+                    <p>contact.html</p>
+                    <p>tickets.html</p>
+                    <p>contactInfo.js</p>
+                    <p>maps.js</p>
+                    <p>script.js</p>
+                    <p>tickets.js</p>
+                    <p>modules.js</p>
+                    <p>style.css</p>
+                    <p>Design Manual</p>
+                    <p>Prototype</p>
+                </div>
+
+                <div class="flex-col textAlignCenter">
+                    <h2>Description</h2>
+                    <p>Homepage</p>
+                    <p>About Clarity</p>
+                    <p>Contact Page</p>
+                    <p>Ticket Store</p>
+                    <p>JS for ticket page</p>
+                    <p>JS for google maps API</p>
+                    <p>General JavaScript</p>
+                    <p>JS for tickets.html</p>
+                    <p>Modules reusable</p>
+                    <p>Styling for the website</p>     
+                    <p>Visual Elements</p>
+                    <p>Prototype</p>
+                </div>
+                <div class="flex-col textAlignRight" style="margin-left:20%;">
+                    <h2>Owner</h2>
+                    <p>Anders</p>
+                    <p>Thomas</p>
+                    <p>Anders</p>
+                    <p>Thomas</p>
+                    <p>Thomas</p>
+                    <p>Anders</p>
+                    <p>Both</p>
+                    <p>Both</p>
+                    <p>Anders</p>
+                    <p>Both</p>
+                    <p>Anders</p>
+                    <p>Anders</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

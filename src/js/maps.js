@@ -1,3 +1,10 @@
+f
+/**
+ * Google Maps API from https://developers.google.com/maps
+ * 
+ * Sets the coordinates, creates an instance of the map and places
+ * the marker on the map.
+ */
 function initMap() {
   // The location of Uluru
   const uluru = { lat: 63.4179288, lng: 10.4030913 };
