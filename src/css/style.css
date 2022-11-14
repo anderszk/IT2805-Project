@@ -519,7 +519,6 @@ footer {
   right: 5%;
   z-index: 2;
   position: absolute;
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
   filter: grayscale(100%);
 }
 
@@ -604,7 +603,7 @@ footer {
 
 .ticketDiv {
   text-align: center;
-  width: 100;
+  width: 100%;
   margin: 19% auto;
 }
 
@@ -739,7 +738,7 @@ footer {
 }
 
 #contact-form textarea:focus {
-  border: inset 1.5px solid #ffb240;
+  border: 1.5px solid #ffb240;
 }
 
 #contact-form textarea {
@@ -764,7 +763,7 @@ footer {
 }
 
 .form-side .btn-holder2 {
-  margin-right: 3% auto;
+  margin-right: auto;
   text-align: center;
   min-height: 50px;
   margin-top: 7%;
@@ -848,24 +847,11 @@ footer {
   border: 1px solid #060606;
   width: 30%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  -webkit-animation-name: animatetop;
-  -webkit-animation-duration: 0.4s;
   animation-name: animatetop;
   animation-duration: 0.4s;
   border-radius: 20px;
 }
 
-/* Add Animation */
-@-webkit-keyframes animatetop {
-  from {
-    top: -300px;
-    opacity: 0;
-  }
-  to {
-    top: 0;
-    opacity: 1;
-  }
-}
 
 @keyframes animatetop {
   from {
@@ -1045,43 +1031,3 @@ footer {
   animation: slide-in-up 1s;
 }
 
-/*--------------------------------------------- Media Queries --------------------------------------------- */
-
-@media only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2) {
-  .split-left1 {
-    height: 60vh;
-  }
-  .split-left2 {
-    height: 60vh;
-  }
-  .split-right1 {
-    height: 60vh;
-  }
-  .split-right2 {
-    height: 60vh;
-  }
-}
-
-/* Portrait and Landscape */
-@media only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) {
-  .split-left1 {
-    float: none;
-    width: 100%;
-  }
-  .split-left2 {
-    float: none;
-    width: 100%;
-  }
-  .split-right1 {
-    float: none;
-    width: 100%;
-  }
-  .split-right2 {
-    float: none;
-    width: 100%;
-    height: 100%;
-  }
-  .split-sec {
-    height: 70vh;
-  }
-}
